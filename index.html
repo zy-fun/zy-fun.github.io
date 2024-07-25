@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            /* padding-bottom: 50px; Adding bottom padding to ensure footer doesn't overlap content */
         }
         header {
             background: #333;
@@ -43,24 +44,9 @@
             color: #fff;
             text-align: center;
             padding: 1rem 0;
-            position: fixed;
+            position: relative;
             width: 100%;
             bottom: 0;
-        }
-        
-        /* Scroll Bar Styles */
-        #scroll-container {
-            position: fixed;
-            right: 0;
-            top: 0;
-            width: 5px;
-            height: 100%;
-            background: #f3f3f3;
-        }
-        #scroll-bar {
-            width: 100%;
-            background: #3498db;
-            height: 0;
         }
     </style>
 </head>
@@ -87,26 +73,10 @@
             </ul>
             <h2>Get Started</h2>
             <p>To get started, simply edit this HTML file and add your own content. You can also add more pages and link to them from the navigation bar above.</p>
-            <p>test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test </p>
         </div>
     </div>
     <footer>
         <p>&copy; 2024 My Static Website</p>
     </footer>
-
-    <!-- Scroll container and bar -->
-    <div id="scroll-container">
-        <div id="scroll-bar"></div>
-    </div>
-
-    <script>
-        // JavaScript to handle the scroll bar
-        window.onscroll = function() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("scroll-bar").style.height = scrolled + "%";
-        };
-    </script>
 </body>
 </html>
